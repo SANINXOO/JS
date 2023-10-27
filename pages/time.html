@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #count{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height:50em;
+            /* text-align: center; */
+  
+        }
+        #sample{
+            border: 10px solid rgb(157, 154, 154);
+            background-color: rgb(206, 180, 138);
+            padding: 20px 80px;
+            color: rgb(109, 108, 108);
+        }
+      
+
+
+
+    </style>
+
+</head>
+<body>
+
+    <!-- time  -->
+    <div id="count">
+        <h2 id="sample"></h2>
+        
+    </div>
+    <script>
+        function Timer(){
+            let dt=new Date();
+            let hr=dt.getHours();
+            let ampm=hr<=12?"am":"pm";
+            let time=addzero(hr%12)+" : "+addzero(dt.getMinutes())+" : "+addzero(dt.getSeconds())+" : "+ampm;
+            console.log(time);
+            document.getElementById("sample").innerHTML=time;
+            setTimeout(function(){
+                Timer();
+            },1000);
+           
+        }
+        
+        Timer();
+        function addzero(param){
+            return param<10?"0"+param:param;
+        }
+
+
+
+    </script>
+
+    <!-- //////////my function/////////// -->
+
+    <!-- <script>
+        let x=function(){
+            console.log("my fnction");
+        }
+        console.log(x()); -->
+
+
+    </script>
+</body>
+</html>

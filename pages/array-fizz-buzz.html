@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="text" id="fb" placeholder="enter a value">
+    <button id="btn">click</button>
+    <div id="list"></div>
+
+    <script>
+        let x=document.querySelector("#fb");
+        let btn=document.querySelector("#btn");
+
+        btn.addEventListener("click",function(){
+            let val=parseInt(x.value)
+            let ar=[]
+            let s="";
+            for(i=0;i<=x.value;i++){
+                if(i%3==0 && i%5==0){
+                    ar.push("fizzbuzz")
+                }
+                else if(i%3==0){
+                    ar.push("fizz")
+                }
+                else if(i%5==0){
+                    ar.push("buzz")
+                }
+                else{
+                    ar.push(i)
+                }
+               
+            }
+            ar.forEach(function(i){
+                s+=`<div>${i}</div>`
+            })
+            document.getElementById("list").innerHTML=s
+        })
+
+
+
+    </script>
+
+    
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <button id="btn">hai</button> 
+     <div id="d"></div>
+
+    
+    <script>
+    //    function add(a,b){
+    //         return a+b;
+    //     }
+    //     function sqrt(val){
+    //         x=val(7,9)
+    //         console.log(x*x);
+    //     }
+    //    sqrt(add)
+
+
+    ///////////example synchronous call back///////////
+
+
+    // console.log("start");
+    // function goodDay(){
+    //     console.log("you have wrk for today");
+    // }
+    // function employee(name,callback){
+    //     console.log("hai  "+name);
+    //     callback()
+    // }
+    // employee("sanin",goodDay)
+    // console.log("end");
+
+
+   /////////////// example asynchronous call back////////
+
+//    console.log("start");
+//     function goodDay(){
+//         console.log("you have wrk for today");
+//     }
+//     function employee(name,callback){
+//        setTimeout(()=>{
+//         console.log("hai  "+name);
+//         callback()
+//        },1000)
+//     }
+//     employee("sanin",goodDay)
+//     console.log("end");
+
+
+////////////////////////////////hell////////////////////////////////////////////
+
+// document.getElementById("btn").onclick=()=>{
+//     console.log("hai");
+//     dispdata(getdata);
+// }
+
+
+
+//     function getdata(){
+
+//     }
+
+
+///////promis/////
+
+// task=new Promise((res,rej)=>{
+//     rej();
+// })
+// task.then(()=>{
+//     console.log("success");
+// }).catch(()=>{
+//     console.log("error");
+// })
+
+////////////////////////j son fetching/////////////////////////
+// let x= document.getElementById("btn")
+// x.onclick=()=>{
+//     fetch("https://jsonplaceholder.typicode.com/todos/1")
+// ((resdata)=>resdata.json()).then((data)=>{
+//     document.getElementById("d").innerHTML=data.id+" "+data.title
+// }).catch((error)=>{
+//     console.log(error);
+
+// })
+// }
+
+
+
+
+/////////////////card////////////////////
+
+     
+     
+    
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

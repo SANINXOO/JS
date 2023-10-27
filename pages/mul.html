@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <input type="text" id="wee" placeholder="enter a number">
+    <button id="btn">click</button>
+    <div id="sum"></div>
+    <script>
+        let a=document.querySelector("#wee")
+        let b=document.querySelector("#btn")
+         
+        btn.addEventListener('click',myFunction);
+        function myFunction(){
+            let val=parseInt(a.value);
+            let s="";
+            for(i=1;i<=10;i++){
+             s=s+"<div>"+i+"a"+val+"="+i*val+"<div>";
+            }
+            document.getElementById("sum").innerHTML=s
+        }
+
+
+
+    </script>
+</body>
+</html>

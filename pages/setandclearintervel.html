@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <div id="count"></div>
+    <script>
+        let x=1
+        let y=setInterval(function{
+            document.getElementById("count").innerHTML=x
+            if (x==10){
+                clearInterval (y)
+            }
+            x=x+1
+        },1000)
+           
+        
+
+
+
+    </script>
+     -->
+
+    <!-- set time out  -->
+
+   <!-- <script>
+        function asd(){
+            
+            setTimeout(function(){
+        document.write("*")
+        asd()
+       },1000)
+
+        }
+        asd();
+      
+    </script> -->
+         <div id="count"></div>
+    <script>
+        let x=1
+        function asd(){
+            
+            setTimeout(function(){
+        document.getElementById("count").innerHTML=x
+       x=x+1
+        
+        if(x<=10){
+            asd()
+        }
+        
+       },2000)
+
+        }
+        asd();
+      
+    
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- <script>
+
+        a=[10,20,30,40,50]
+        console.log(Math.max(...a));
+
+
+    </script> -->
+
+    <!-- //////deestructure////// -->
+
+    <!-- <script>
+
+        let a=[1,2,3,4]
+        let [x,y,j]=a
+
+        console.log(x,y,j);
+
+
+
+
+
+    </script> -->
+
+
+    <!-- <script>
+
+        let a=[{name:"arun",mark:"25",place:"malappuram"},
+        {name:"arjun",mark:"30",place:"malappuram"},
+        {name:"musin",mark:"30",place:"malappuram"},
+        {name:"aswan",mark:"30",place:"malappuram"}
+
+        ]
+        a.forEach((value,index)=>{
+            console.log(value);
+            console.log(index);
+        })
+
+
+    </script> -->
+
+
+     <!-- <script>
+         let a=[{name:"arun",mark:"25",place:"malappuram"},
+        {name:"arun",mark:"30",place:"malappuram"},
+        {name:"musin",mark:"30",place:"malappuram"},
+        {name:"aswan",mark:"30",place:"malappuram"}
+
+        ] 
+
+        ////////find ///// filter//////
+
+
+         let x=a.filter((item)=>{
+         return item.name==="arun"
+         })
+         console.log(x);
+
+        ////find/name//////
+
+       a.map((item)=>{
+        console.log(item.name);
+            
+   })
+        
+    </script> -->
+
+
+    <!-- ////////reduce add///// -->
+
+    <!-- <script>
+          let a=[{name:"arun",mark:25,place:"malappuram"},
+        {name:"arun",mark:30,place:"malappuram"},
+        {name:"musin",mark:30,place:"malappuram"},
+        {name:"aswan",mark:30,place:"malappuram"}
+
+        ]
+        let x=a.reduce((total,val)=>{
+            return total+val.mark
+        },0)
+        console.log(x);
+
+
+    </script>
+     -->
+
+     <!-- //////////this/////////// -->
+
+     <!-- <script>
+
+        let person={
+            user:"akash",
+            age:"30",
+            Data:function(){
+                 console.log("name is   "+this.user+"   age is   "+this.age+"");
+                
+            }
+        }
+        let x=person.Data.bind(person)
+        x()
+        // x.call(person)
+        // console.log(person.Data());
+        // x()
+
+
+     </script> -->
+</body>
+</html>

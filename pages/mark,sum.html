@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let user1={name:"shibiyas",che:20,eng:25,math:30}
+        let user2={name:"ajmal",che:20,eng:25,math:30}
+        let user3={name:"arun",che:20,eng:25,math:30}
+        let user4={name:"muhsin",che:20,eng:25,math:30}
+        let user5={name:"akash",che:20,eng:25,math:30}
+        let data={
+            sum:function(){
+                console.log(`name is :  ${this.name} ,   total:  ${this.che+this.eng+this.math}`)
+            }
+            
+        }
+        x=data.sum;
+
+        x.call(user1)
+        x.call(user2)
+        x.call(user3)
+        x.call(user4)
+        x.call(user5)
+
+
+
+    </script>
+    
+</body>
+</html>

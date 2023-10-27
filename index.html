@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: 80px;
+        }
+
+        .card{
+            width: 20%;
+            border: 1px solid gray;
+            margin: 20px;
+            box-shadow:   0px 0px 20px -4px rgba(0,0,0,0.75);;
+        }
+        .card img{
+            margin-top: 50px;
+            margin-left: 70px;
+            width: 50%;
+            box-shadow:   0px 0px 20px -4px rgba(0,0,0,0.55);
+        }
+        .card-title{
+            display: flex;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div id="card" class="container">
+        <div class="image">
+           
+        </div>
+      
+    </div>
+    <script>
+      async function   myFunction(){
+            try {
+                res=await fetch("https://jsonplaceholder.typicode.com/users")
+            data=await res.json();
+            console.log(data);
+            s=""
+            data.map((dt)=>{
+                console.log(dt.name);
+                s+=`  <div class="card">
+                    <img src="./image/01B8BA52-DFAC-4733-BD26-0D60C2DBDFD3_1_105_c.jpeg" alt="">
+            <div class="card-title">
+                <h4>Name :</h4>
+                <h4>${dt.name}</h4>
+            </div>
+            <div class="card-title">
+                <h4>Email :</h4>
+                <h4>${dt.email}</h4>
+            </div>
+            <div class="card-title">
+                <h4>address :</h4>
+                <h4>${dt.address.street}</h4>
+            </div>
+
+        </div>`
+            })
+
+
+            document.getElementById("card").innerHTML=s;
+            } catch (error) {
+                console.log("dasddas");
+            }
+      }
+      myFunction()
+    </script>
+</body>
+</html>
